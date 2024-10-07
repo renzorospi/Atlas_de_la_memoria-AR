@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización 3D de Imágenes</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+    <!-- MOVIMIENTO DE LA CAMARA -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+    <!-- LIBRERIAS DE COLISIONES Y FÍSICAS-->
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+</head>
+<body>
+
+    <a-scene embedded arjs, physics="gravity:0; debug: false">
+
+
+        <a-marker-camera preset='hiro'></a-marker-camera>
+
+            <a-entity movement-controls kinematic-body>
+          
+            <a-entity id="camera" camera position="1 10 0" look-controls wasd-controls="acceleration: 100"
+            light="intensity:1; type:point; penumbra:1.0"></a-entity>
+            </a-entity>
+
+        
+
+        <!-- Agrega aquí las etiquetas de imágenes generadas -->
+        <!-- Sustituye este contenido con la salida del script anterior -->
+
+        <!-- Ejemplo de etiqueta de imagen -->
+        <!-- <a-entity position="0 0 -5">
+                <a-image src="nombre_de_la_imagen.jpg" width="1" height="1"></a-image>
+            </a-entity> -->
+
+<!--ETIQUETAS DIEGO-->
+        
+<a-box opacity:="" 0.0="" material="opacity: 0" geometry="" position="-0.42286 10.2916 -73.38412" rotation="">
+    <a-entity position="0.564 3.584 -60.101">
+        <a-image src="./assets/11 (5).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-6.054421901702881 23.838420867919922 -93.06714630126953">
+        <a-image src="./assets/11 (8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-25.339069366455078 -7.826147556304932 -59.974830627441406">
+        <a-image src="./assets/11 (9).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-40.66922378540039 0.3958309590816498 -59.314762115478516">
+        <a-image src="./assets/11 (11).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-0.883524477481842 -7.807155132293701 -35.045422077178955">
+        <a-image src="./assets/11 (15).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="3.1819510459899902 13.716373443603516 -58.13974952697754">
+        <a-image src="./assets/11 (16).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-12.800739288330078 18.060224533081055 -59.75786209106445">
+        <a-image src="./assets/11 (27).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-46.40414047241211 2.1814332008361816 -65.89214324951172">
+        <a-image src="./assets/11 (31).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-2.5480947494506836 10.197467803955078 -95.31333923339844">
+        <a-image src="./assets/11 (34).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-33.72043991088867 -17.616649627685547 -59.95772933959961">
+        <a-image src="./assets/11 (35).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-49.24203872680664 -9.2110013961792 -58.70092582702637">
+        <a-image src="./assets/11 (37).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-48.03586959838867 26.21765899658203 -61.10126304626465">
+        <a-image src="./assets/11 (39).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-44.13176727294922 19.68617057800293 -90.80467987060547">
+        <a-image src="./assets/11 (42).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-35.482093811035156 8.242541313171387 -71.17469024658203">
+        <a-image src="./assets/11 (46).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-57.28018569946289 -6.552855968475342 -64.91239166259766">
+        <a-image src="./assets/11 (51).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-10.321020126342773 8.184869766235352 -95.81402587890625">
+        <a-image src="./assets/11 (52).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-42.672359466552734 -5.965458393096924 -70.03141403198242">
+        <a-image src="./assets/11 (54).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-11.693486213684082 40.649200439453125 -79.1460060119629">
+        <a-image src="./assets/INFERENCIA_12 (182).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="3.988353729248047 9.958808898925781 -44.37394847869873">
+        <a-image src="./assets/INFERENCIA_12 (191).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-17.837993621826172 4.573598384857178 -58.49318351745605">
+        <a-image src="./assets/INFERENCIA_02 (6).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-13.278672218322754 -7.743648052215576 -70.52358856201172">
+        <a-image src="./assets/INFERENCIA_02 (8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-9.795097351074219 -3.0318470001220703 -32.383664989471434">
+        <a-image src="./assets/INFERENCIA_02 (17).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-6.0810017585754395 -11.149277687072754 -47.09135475158691">
+        <a-image src="./assets/INFERENCIA_02 (24).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-6.646737575531006 -30.087648391723633 -53.26630630493164">
+        <a-image src="./assets/INFERENCIA_02 (26).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-18.98497772216797 13.09510612487793 -44.742100143432616">
+        <a-image src="./assets/INFERENCIA_02 (34).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-25.972578048706055 15.392815589904785 -67.17267074584962">
+        <a-image src="./assets/INFERENCIA_02 (36).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-17.58285903930664 -18.62632179260254 -67.63043060302734">
+        <a-image src="./assets/INFERENCIA_02 (41).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="6.359559535980225 14.867477416992188 -81.03056564331054">
+        <a-image src="./assets/INFERENCIA_7 (24).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-19.272994995117188 20.391613006591797 -76.68010177612304">
+        <a-image src="./assets/INFERENCIA_10(09).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-29.091100692749023 -30.10835075378418 -71.31877365112304">
+        <a-image src="./assets/INFERENCIA_10(11).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-29.95650863647461 -10.25567626953125 -79.10268630981444">
+        <a-image src="./assets/INFERENCIA_10(02).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="13.395574569702148 4.376858711242676 -56.893581771850585">
+        <a-image src="./assets/INFERENCIA_10(03).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-15.03093147277832 -42.587162017822266 -62.18680038452148">
+        <a-image src="./assets/INFERENCIA_06(43).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="13.154423713684082 -5.9748735427856445 -74.51907958984376">
+        <a-image src="./assets/INFERENCIA_06(35).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="10.030098915100098 1.0405093431472778 -38.583807373046874">
+        <a-image src="./assets/INFERENCIA_06(13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="7.065927982330322 -14.059527397155762 -61.91774215698242">
+        <a-image src="./assets/INFERENCIA_06(48).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="3.2824649810791016 16.759475708007812 -99.36640014648438">
+        <a-image src="./assets/INFERENCIA_03(6).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="17.488821029663086 -5.538365364074707 -84.77255477905273">
+        <a-image src="./assets/INFERENCIA_03(8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="14.706235885620117 -15.750972747802734 -75.32537689208984">
+        <a-image src="./assets/INFERENCIA_03(10).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="12.058589935302734 3.2168779373168945 -71.63465728759766">
+        <a-image src="./assets/INFERENCIA_03(12).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="3.8925602436065674 -15.879172325134277 -43.69305267333984">
+        <a-image src="./assets/INFERENCIA_03(13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="6.018713474273682 7.119338035583496 -91.55090179443359">
+        <a-image src="./assets/INFERENCIA_03(18).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-1.4701831340789795 17.762924194335938 -75.14117279052734">
+        <a-image src="./assets/INFERENCIA_03(19).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-2.6453497409820557 25.34145736694336 -73.98480453491212">
+        <a-image src="./assets/INFERENCIA_03(20).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="1.617760419845581 -3.5165627002716064 -64.21954956054688">
+        <a-image src="./assets/INFERENCIA_03(21).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="34 10 -40">
+        <a-image src="./assets/metadatos_diego-01.png" width="40" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    </a-box>
+
+   
+    
+    <!--ETIQUETAS FELIPE --> 
+    
+    <a-box opacity:="" 0.0="" material="opacity: 0" geometry="" position="-0.42286 10.2916 139.58137" rotation="0 -180 0">
+        <a-image src="./assets/03(25).jpg" width="10" height="10" material="" geometry=""></a-image>
+    
+    <a-entity position="8.199294090270996 -23.16063117980957 24.132688522338867">
+        <a-image src="./assets/01(8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="14.039323806762695 -7.165424823760986 53.032039642333984">
+        <a-image src="./assets/INFERENCIA_01(8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-1.0607030391693115 -4.722500324249268 42.6387939453125">
+        <a-image src="./assets/01(11).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="12.337241172790527 3.296414375305176 22.356264114379883">
+        <a-image src="./assets/INFERENCIA_01(11).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="15.708186149597168 -4.102375507354736 8.565568923950195">
+        <a-image src="./assets/01(12).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-7.1520094871521 -28.849119186401367 37.80393600463867">
+        <a-image src="./assets/INFERENCIA_01(12).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-22.8009090423584 -15.735637664794922 36.39042282104492">
+        <a-image src="./assets/01(13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-48.2786979675293 3.0591518878936768 30.697998046875">
+        <a-image src="./assets/INFERENCIA_01(13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="2.1158807277679443 14.767134666442871 28.36619758605957">
+        <a-image src="./assets/01(14).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-53.712745666503906 0.2587449848651886 14.693936347961426">
+        <a-image src="./assets/INFERENCIA_01(14).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="0.43354886770248413 -11.505833625793457 55.388614654541016">
+        <a-image src="./assets/01(17).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-47.318111419677734 4.763020038604736 35.83073043823242">
+        <a-image src="./assets/INFERENCIA_01(17).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-43.22783660888672 14.930960655212402 4.946585655212402">
+        <a-image src="./assets/01(19).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-37.57679748535156 -14.082781791687012 4.888228416442871">
+        <a-image src="./assets/INFERENCIA_01(19).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-16.422080993652344 44.45664978027344 -25.46011734008789">
+        <a-image src="./assets/01(25).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-49.61699295043945 9.214619636535645 14.612570762634277">
+        <a-image src="./assets/INFERENCIA_01(25).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-38.98992156982422 6.677060127258301 9.498736381530762">
+        <a-image src="./assets/01(26).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-22.31778335571289 -21.917680740356445 46.87403106689453">
+        <a-image src="./assets/INFERENCIA_01(26).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-32.34736633300781 -3.678171396255493 37.69461441040039">
+        <a-image src="./assets/01(27).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="8.574187278747559 -24.144790649414062 7.147630214691162">
+        <a-image src="./assets/INFERENCIA_01(27).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-3.238074541091919 -3.218606472015381 34.57187271118164">
+        <a-image src="./assets/01(32).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="8.990374565124512 -0.2931075990200043 31.8571834564209">
+        <a-image src="./assets/INFERENCIA_01(32).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-22.532196044921875 5.157557010650635 29.31363296508789">
+        <a-image src="./assets/01(35).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-4.404481887817383 16.674104690551758 9.758073806762695">
+        <a-image src="./assets/INFERENCIA_01(35).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="2.1933224201202393 -17.596052169799805 16.181533813476562">
+        <a-image src="./assets/01(38).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-4.892979145050049 -17.04859161376953 -24.224618911743164">
+        <a-image src="./assets/INFERENCIA_01(38).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-20.67045783996582 -1.8145763874053955 38.371482849121094">
+        <a-image src="./assets/01(41).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-33.210330963134766 7.135335445404053 31.034114837646484">
+        <a-image src="./assets/INFERENCIA_01(41).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-32.54884719848633 6.222963809967041 20.542888641357422">
+        <a-image src="./assets/01(43).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-6.770260810852051 -11.01333999633789 33.41547775268555">
+        <a-image src="./assets/INFERENCIA_01(43).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-20.330936431884766 15.300643920898438 31.791542053222656">
+        <a-image src="./assets/01(79).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="4.160502910614014 -1.2630451917648315 25.293079376220703">
+        <a-image src="./assets/INFERENCIA_01(79).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="10.069772720336914 -37.66022872924805 21.811098098754883">
+        <a-image src="./assets/01(96).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-9.842652320861816 44.41507339477539 -16.14807891845703">
+        <a-image src="./assets/INFERENCIA_01(96).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="8.605605125427246 -21.383934020996094 16.18851661682129">
+        <a-image src="./assets/01(97).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="9.705270767211914 -29.973066329956055 12.706308364868164">
+        <a-image src="./assets/INFERENCIA_01(97).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-3.3342525959014893 -9.5092134475708 14.499497413635254">
+        <a-image src="./assets/04 (43).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="6.615555286407471 -14.219942092895508 26.686439514160156">
+        <a-image src="./assets/INFERENCIA_02 (31).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-21.512746810913086 16.95648193359375 18.388402938842773">
+        <a-image src="./assets/03(24).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-25.158735275268555 7.554053783416748 13.692782402038574">
+        <a-image src="./assets/INFERENCIA_03(24).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="60.28358840942383 2.000352144241333 0.19264812767505646">
+        <a-image src="./assets/04 (33).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-42.19681167602539 19.464088439941406 28.473888397216797">
+        <a-image src="./assets/INFERENCIA_03(25).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-33.62565231323242 -16.679353713989258 17.34878158569336">
+        <a-image src="./assets/04 (1).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-14.306571006774902 -9.35687255859375 56.55144500732422">
+        <a-image src="./assets/INFERENCIA_04 (1).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="0.8710951209068298 -25.459453582763672 21.133159637451172">
+        <a-image src="./assets/04 (3).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="6.248538494110107 -6.128838062286377 4.106774806976318">
+        <a-image src="./assets/INFERENCIA_04 (3).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-8.064563751220703 -3.032790422439575 8.73088264465332">
+        <a-image src="./assets/04 (4).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-1.362237811088562 5.15335750579834 40.490638732910156">
+        <a-image src="./assets/INFERENCIA_04 (4).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="4.139338493347168 -5.915807247161865 15.462657928466797">
+        <a-image src="./assets/04 (8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="22.105587005615234 -19.336952209472656 20.464862823486328">
+        <a-image src="./assets/INFERENCIA_04 (8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-38.135189056396484 -26.778654098510742 9.150045394897461">
+        <a-image src="./assets/04 (10).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="1.2067620754241943 25.395875930786133 -14.503799438476562">
+        <a-image src="./assets/INFERENCIA_04 (10).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="16.986345291137695 12.020753860473633 32.81265640258789">
+        <a-image src="./assets/04 (15).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-13.76312255859375 22.32298469543457 -1.6775649785995483">
+        <a-image src="./assets/INFERENCIA_04 (15).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-10.829207420349121 -15.188373565673828 12.877448081970215">
+        <a-image src="./assets/04 (17).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-7.630374431610107 -20.94650650024414 14.044992446899414">
+        <a-image src="./assets/INFERENCIA_04 (17).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="4.122533798217773 2.4865505695343018 -3.4067206382751465">
+        <a-image src="./assets/04 (20).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="25.509668350219727 -41.326255798339844 26.434879302978516">
+        <a-image src="./assets/INFERENCIA_04 (20).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-0.0596003495156765 4.313770294189453 30.8454532623291">
+        <a-image src="./assets/04 (22).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="10.528100967407227 7.799052715301514 12.62048053741455">
+        <a-image src="./assets/04 (21).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-40.33370590209961 7.307522296905518 -1.2418235540390015">
+        <a-image src="./assets/INFERENCIA_04 (21).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-11.840832710266113 11.545936584472656 22.24983024597168">
+        <a-image src="./assets/04 (34).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-19.856727600097656 -7.476335048675537 48.11906051635742">
+        <a-image src="./assets/INFERENCIA_04 (34).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-17.789569854736328 -2.6686179637908936 -5.778262138366699">
+        <a-image src="./assets/04 (36).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-2.5623552799224854 -17.96993064880371 25.679244995117188">
+        <a-image src="./assets/INFERENCIA_04 (36).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="12.133694648742676 -13.174015045166016 11.61713695526123">
+        <a-image src="./assets/04 (38).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-23.40755844116211 -33.79153060913086 17.370830535888672">
+        <a-image src="./assets/INFERENCIA_04 (38).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-10.156982421875 -3.136732816696167 36.76290512084961">
+        <a-image src="./assets/04 (40).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-4.226046085357666 30.035167694091797 -3.510552167892456">
+        <a-image src="./assets/INFERENCIA_04 (40).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="48.6 -8 50.2">
+        <a-image src="./assets/metadatos_felipe-02.png" width="45" height="10" material="" geometry=""></a-image>
+    </a-entity>
+
+    </a-box>
+    
+ 
+            
+    <!--ETIQUETAS ANYI -->
+
+    <a-box opacity:="" 0.0="" material="opacity: 0" geometry="" position="131.41544 -10.77539 -18.30058" rotation="0 -90 0">
+        <a-entity position="-14.94056 18.1155 -7.93721">
+            <a-image src="./assets/11 (102).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="-9.18067 21.24045 -36.08255">
+            <a-image src="./assets/01(1).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="11.5288 36.83064 39.94976">
+            <a-image src="./assets/01(4).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="31.4221 11.70626 -7.03858">
+            <a-image src="./assets/01(5).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="13.9373 22.42188 -29.38167">
+            <a-image src="./assets/INFERENCIA_01(6).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="10.52115 5.20796 10.36673">
+            <a-image src="./assets/01(7).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="3.73898 12.97948 29.26644">
+            <a-image src="./assets/01(9).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="5.13949 20.18063 -0.07517">
+            <a-image src="./assets/01(10).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="11.12361 17.79086 -13.40365">
+            <a-image src="./assets/01(11).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="20.7887 25.88697 26.54812">
+            <a-image src="./assets/01(15).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="13.23285 -10.01873 28.02259">
+            <a-image src="./assets/INFERENCIA_01(17).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="7.5612 10.20979 -2.46367">
+            <a-image src="./assets/01(20).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="15.82231 -5.92367 -49.80743" visible="">
+            <a-image src="./assets/INFERENCIA_02 (45).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="37.62441 9.38192 6.08717">
+            <a-image src="./assets/INFERENCIA_01(42).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="10.62581 -2.92175 22.01319">
+            <a-image src="./assets/06(7).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="-0.29167 7.24155 2.69534">
+            <a-image src="./assets/06(12).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="5.34815 28.16423 -7.76926">
+            <a-image src="./assets/01(21).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="-3.14358 20.21187 53.10393">
+            <a-image src="./assets/INFERENCIA_01(28).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="18.99136 13.90051 4.05213">
+            <a-image src="./assets/01(29).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="17.23052 -0.1782 19.3187">
+            <a-image src="./assets/INFERENCIA_01(35).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="1.64706 17.38145 -42.38273">
+            <a-image src="./assets/01(41).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="13.82833 8.8217 -57.05481">
+            <a-image src="./assets/01(70).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="21.10006 3.97778 -16.42583">
+            <a-image src="./assets/01(69).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="26.51874 10.18101 -39.43562">
+            <a-image src="./assets/I01(64).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="3.25901 17.23218 -19.12881">
+            <a-image src="./assets/INFERENCIA_01(73).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="20.68131 14.34424 14.14953">
+            <a-image src="./assets/01(79).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="4.78205 15.09775 38.06493">
+            <a-image src="./assets/INFERENCIA_01(72).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="-2.79645 8.56583 -46.7037">
+            <a-image src="./assets/INFERENCIA_01(76).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="13.14032 6.07787 -21.76192">
+            <a-image src="./assets/INFERENCIA_01(86).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="0.254 7.28886 -36.25396">
+            <a-image src="./assets/INFERENCIA_01(88).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="10.17648 27.25403 -39.02232">
+            <a-image src="./assets/01(90).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="10.06592 19.1757 10.29076">
+            <a-image src="./assets/INFERENCIA_01(84).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="17.64384 37.0113 -46.49583">
+            <a-image src="./assets/INFERENCIA_01(93).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="0.12671 9.46901 14.1437">
+            <a-image src="./assets/INFERENCIA_01(96).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="5.0016 11.94045 -11.35582">
+            <a-image src="./assets/INFERENCIA_01(94).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="27.99159 22.47463 44.64446">
+            <a-image src="./assets/01(100).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="38.43841 -5.92367 -49.80743" visible="">
+            <a-image src="./assets/INFERENCIA_02 (45).jpg" width="10" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        <a-entity position="58.368 23.173 40.415">
+            <a-image src="./assets/metadatos_anyi-03.png" width="45" height="10" material="" geometry=""></a-image>
+        </a-entity>
+        
+</a-box>
+
+
+
+<!-- ETIQUETAS SOLO INFERENCIAS-->
+
+
+<a-box opacity:="" 0.0="" material="opacity: 0" geometry="" position="-123.40394 6.61847 -11.69636" rotation="0 90.19730794067472 0" visible="">
+    <a-entity position="70.90495300292969 -15.635990142822266 -22.501737594604492">
+        <a-image src="./assets/INFERENCIA_11 (12).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="26.79229736328125 -33.32984924316406 7.215559482574463">
+        <a-image src="./assets/INFERENCIA_11 (16).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-12.907732963562012 -9.460853576660156 -73.9008560180664">
+        <a-image src="./assets/INFERENCIA_11 (19).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="13.803872108459473 -41.000240325927734 -36.31436538696289">
+        <a-image src="./assets/INFERENCIA_11 (25).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="22.939430236816406 47.307106018066406 -35.760868072509766">
+        <a-image src="./assets/INFERENCIA_11 (29).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="21.123374938964844 32.74917221069336 -21.25762176513672">
+        <a-image src="./assets/INFERENCIA_11 (36).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="16.086122512817383 -43.14366912841797 -22.715961456298828">
+        <a-image src="./assets/INFERENCIA_11 (53).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="35.90105056762695 -17.034473419189453 0.3054659962654114">
+        <a-image src="./assets/INFERENCIA_11 (60).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="46.64984130859375 0.806312084197998 -40.786033630371094">
+        <a-image src="./assets/INFERENCIA_11 (83).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="57.29045867919922 -1.0880216360092163 -39.37260055541992">
+        <a-image src="./assets/INFERENCIA_11 (90).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="32.05672073364258 -13.55591869354248 -54.80598068237305">
+        <a-image src="./assets/INFERENCIA_11 (92).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="66.50838470458984 5.4208197593688965 -25.89069175720215">
+        <a-image src="./assets/INFERENCIA_11 (93).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="11.778203964233398 43.868988037109375 -28.061424255371094">
+        <a-image src="./assets/INFERENCIA_11 (96).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="50.89218521118164 3.7461442947387695 -28.28586769104004">
+        <a-image src="./assets/INFERENCIA_11 (98).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="27.12888526916504 1.509615421295166 -72.6527099609375">
+        <a-image src="./assets/INFERENCIA_12 (153).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="55.602943420410156 -27.846418380737305 -14.371672630310059">
+        <a-image src="./assets/INFERENCIA_12 (154).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-0.02685650624334812 -50.85199737548828 -36.250328063964844">
+        <a-image src="./assets/INFERENCIA_12 (155).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="30.651554107666016 37.94797897338867 -26.41887664794922">
+        <a-image src="./assets/INFERENCIA_12 (163).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="32.17080307006836 16.789276123046875 -13.686406135559082">
+        <a-image src="./assets/INFERENCIA_12 (167).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="25.03606414794922 -2.6496622562408447 -30.49435043334961">
+        <a-image src="./assets/INFERENCIA_12 (168).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="18.028621673583984 4.82509708404541 -20.021198272705078">
+        <a-image src="./assets/INFERENCIA_12 (182).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-35.31898880004883 31.123729705810547 -58.213504791259766">
+        <a-image src="./assets/INFERENCIA_12 (185).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="29.731525421142578 13.566008567810059 -64.98171997070312">
+        <a-image src="./assets/INFERENCIA_12 (186).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="68.08084869384766 -33.95088577270508 -0.36182308197021484">
+        <a-image src="./assets/INFERENCIA_12 (197).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="9.984621047973633 -9.481138229370117 -0.10305055975914001">
+        <a-image src="./assets/INFERENCIA_02 (3).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>   
+    <a-entity position="34.48086166381836 -44.47760772705078 -4.536550521850586">
+        <a-image src="./assets/INFERENCIA_02 (8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="37.58294677734375 -19.475261688232422 -19.233989715576172">
+        <a-image src="./assets/INFERENCIA_02 (9).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-6.7275390625 -21.047883987426758 -47.22770309448242">
+        <a-image src="./assets/INFERENCIA_01(3).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-6.9842095375061035 51.46714782714844 -37.86748123168945">
+        <a-image src="./assets/INFERENCIA_02 (10).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="34.150150299072266 -38.93458557128906 -23.837425231933594">
+        <a-image src="./assets/INFERENCIA_02 (12).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>  
+    <a-entity position="19.2021427154541 -50.07984924316406 -43.6558952331543">
+        <a-image src="./assets/INFERENCIA_02 (13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-19.43412208557129 4.189165115356445 -33.47872543334961">
+        <a-image src="./assets/INFERENCIA_01(9).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="55.750755310058594 33.19243621826172 -30.112445831298828">
+        <a-image src="./assets/INFERENCIA_02 (16).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>   
+    <a-entity position="6.896294593811035 20.478515625 -35.395965576171875">
+        <a-image src="./assets/INFERENCIA_01(12).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>   
+    <a-entity position="39.74198532104492 -53.760498046875 -35.682552337646484">
+        <a-image src="./assets/INFERENCIA_02 (21).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="44.969642639160156 21.013765335083008 -52.48707580566406">
+        <a-image src="./assets/INFERENCIA_02 (23).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>   
+    <a-entity position="-7.345940589904785 -40.66819763183594 -49.69639205932617">
+        <a-image src="./assets/INFERENCIA_01(16).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-18.429126739501953 20.39191246032715 -9.966214179992676">
+        <a-image src="./assets/INFERENCIA_01(21).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-21.624408721923828 30.31314468383789 -45.488319396972656">
+        <a-image src="./assets/INFERENCIA_01(22).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>  
+    <a-entity position="23.104162216186523 10.814779281616211 -8.486307144165039">
+        <a-image src="./assets/INFERENCIA_05 (2).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="9.495161056518555 13.9267578125 -80.15428161621094">
+        <a-image src="./assets/INFERENCIA_05 (3).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="36.077510833740234 -57.325660705566406 -10.818631172180176">
+        <a-image src="./assets/INFERENCIA_02 (41).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+   <a-entity position="34.68144989013672 -31.983945846557617 -47.505558013916016">
+        <a-image src="./assets/INFERENCIA_05 (7).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>   
+    <a-entity position="22.007184982299805 32.256893157958984 -36.35002899169922">
+        <a-image src="./assets/INFERENCIA_01(34).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>  
+    <a-entity position="-4.267240524291992 6.8515400886535645 -29.823320388793945">
+        <a-image src="./assets/INFERENCIA_01(38).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="57.07273483276367 -5.765531063079834 -14.294231414794922">
+        <a-image src="./assets/INFERENCIA_05 (9).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="4.348575592041016 27.65315055847168 -27.506153106689453">
+        <a-image src="./assets/INFERENCIA_01(39).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="11.666380882263184 -4.213479042053223 -12.205998420715332">
+        <a-image src="./assets/INFERENCIA_04 (3).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-6.401851654052734 -61.192012786865234 -51.18115234375">
+        <a-image src="./assets/INFERENCIA_04 (2).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="16.00547981262207 4.468847751617432 -55.96139144897461">
+        <a-image src="./assets/INFERENCIA_04 (13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="13.439926147460938 -31.765239715576172 -67.81837463378906">
+        <a-image src="./assets/INFERENCIA_04 (6).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="15.336237907409668 -57.622467041015625 -32.19846725463867">
+        <a-image src="./assets/INFERENCIA_04 (21).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="49.83476638793945 -0.5274335145950317 -60.17365264892578">
+        <a-image src="./assets/INFERENCIA_04 (28).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="10.318583488464355 8.58309268951416 -28.94024658203125">
+        <a-image src="./assets/INFERENCIA_04 (32).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="32.715946197509766 -4.708864212036133 -16.6909236907959">
+        <a-image src="./assets/INFERENCIA_04 (33).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-32.76548385620117 -6.3524603843688965 -57.68391418457031">
+        <a-image src="./assets/INFERENCIA_01(44).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="7.911514759063721 -33.33736038208008 -49.38300323486328">
+        <a-image src="./assets/INFERENCIA_05 (13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-12.890913009643555 -23.6723690032959 -72.53410339355469">
+        <a-image src="./assets/INFERENCIA_05 (14).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-17.598220825195312 -13.349081039428711 -55.106651306152344">
+        <a-image src="./assets/INFERENCIA_01(62).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-7.135112285614014 36.61064910888672 -28.504671096801758">
+        <a-image src="./assets/INFERENCIA_01(74).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="30.151880264282227 -10.511375427246094 -36.94328689575195">
+        <a-image src="./assets/INFERENCIA_01(80).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="51.900665283203125 -33.63018035888672 -33.63359832763672">
+        <a-image src="./assets/INFERENCIA_01(83).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="5.1061272621154785 13.747918128967285 -20.20524024963379">
+        <a-image src="./assets/INFERENCIA_01(95).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="11.78857135772705 -48.8102912902832 -51.40669631958008">
+        <a-image src="./assets/INFERENCIA_7 (2).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="21.09172248840332 8.180727005004883 -35.87126541137695">
+        <a-image src="./assets/INFERENCIA_7 (5).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="21.345388412475586 52.78999710083008 -48.58734130859375">
+        <a-image src="./assets/INFERENCIA_7 (8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="14.937660217285156 46.864192962646484 -55.4956169128418">
+        <a-image src="./assets/INFERENCIA_7 (13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="7.089931964874268 63.23902130126953 -34.151058197021484">
+        <a-image src="./assets/INFERENCIA_7 (15).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="10.398622512817383 23.666351318359375 -44.94911193847656">
+        <a-image src="./assets/INFERENCIA_7 (17).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-21.63673210144043 -12.864006996154785 -40.92258834838867">
+        <a-image src="./assets/INFERENCIA_7 (18).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="22.124528884887695 -19.841215133666992 0.45998615026474">
+        <a-image src="./assets/INFERENCIA_7 (19).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="23.32172393798828 -27.421344757080078 -33.19167709350586">
+        <a-image src="./assets/INFERENCIA_7 (20).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="19.753358840942383 -13.651050567626953 -21.0334529876709">
+        <a-image src="./assets/INFERENCIA_7 (21).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="53.695945739746094 8.577963829040527 -16.461017608642578">
+        <a-image src="./assets/INFERENCIA_7 (26).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="36.410247802734375 9.667529106140137 -28.767086029052734">
+        <a-image src="./assets/INFERENCIA_7 (30).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="19.35683822631836 19.599206924438477 -11.846345901489258">
+        <a-image src="./assets/INFERENCIA_10(07).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="29.979076385498047 32.6831169128418 -47.32921600341797">
+        <a-image src="./assets/INFERENCIA_10(08).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="4.672708034515381 11.554560661315918 -6.149322032928467">
+        <a-image src="./assets/INFERENCIA_10(10).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="3.5817997455596924 -15.368648529052734 -19.979875564575195">
+        <a-image src="./assets/INFERENCIA_10(13).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="48.64753341674805 13.434269905090332 -32.796852111816406">
+        <a-image src="./assets/INFERENCIA_10(06).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="5.531112194061279 -27.48029136657715 -33.75492858886719">
+        <a-image src="./assets/INFERENCIA_06(2).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-14.76486587524414 -5.244274616241455 -23.128976821899414">
+        <a-image src="./assets/INFERENCIA_06(5).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-4.012975692749023 -1.884035348892212 -1.5798331499099731">
+        <a-image src="./assets/INFERENCIA_06(14).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="11.287814140319824 29.60061264038086 -62.88684844970703">
+        <a-image src="./assets/INFERENCIA_06(16).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-1.6844496726989746 -6.976079940795898 -15.295856475830078">
+        <a-image src="./assets/INFERENCIA_06(41).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="16.362398147583008 -41.71725845336914 -3.2485032081604004">
+        <a-image src="./assets/INFERENCIA_06(3).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-24.406707763671875 -27.49999237060547 -49.482200622558594">
+        <a-image src="./assets/INFERENCIA_06(19).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-10.452340126037598 6.721005916595459 -16.402769088745117">
+        <a-image src="./assets/INFERENCIA_06(12).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="0.8132075667381287 -38.366371154785156 -41.946083068847656">
+        <a-image src="./assets/INFERENCIA_06(8).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-6.58800745010376 -29.35338592529297 -38.22570037841797">
+        <a-image src="./assets/INFERENCIA_06(10).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="8.936302185058594 -18.562360763549805 -39.925228118896484">
+        <a-image src="./assets/INFERENCIA_06(22).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="50.525634765625 -19.18136215209961 -45.91115188598633">
+        <a-image src="./assets/INFERENCIA_06(39).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-5.385284423828125 -5.083870887756348 -40.33015060424805">
+        <a-image src="./assets/INFERENCIA_06(28).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="9.577313423156738 -29.39846420288086 -17.865934371948242">
+        <a-image src="./assets/INFERENCIA_06(31).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="12.786416053771973 4.954405307769775 -4.031189441680908">
+        <a-image src="./assets/INFERENCIA_03(2).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="50.44539260864258 -10.890151023864746 -22.405839920043945">
+        <a-image src="./assets/INFERENCIA_03(3).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="39.85044479370117 -54.06355667114258 11.365832328796387">
+        <a-image src="./assets/INFERENCIA_03(16).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="52.82477569580078 -47.78291702270508 -14.671031951904297">
+        <a-image src="./assets/INFERENCIA_03(22).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="39.81246566772461 28.9143123626709 -29.81607437133789">
+        <a-image src="./assets/INFERENCIA_03(24).jpg" width="10" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    <a-entity position="-36.212 -8.456 14.904">
+        <a-image src="./assets/metadatos_inferencias-04.png" width="45" height="10" material="" geometry=""></a-image>
+    </a-entity>
+    </a-box>
+
+
+
+        
+           
+    </a-scene>
+
+</body>
+</html>
